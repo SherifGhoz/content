@@ -105,6 +105,17 @@ If the `type` attribute isn't specified, the media's type is retrieved from the 
 
 When used in the context of a `<picture>` element, the browser will fall back to using the image specified by the `<picture>` element's {{HTMLElement("img")}} child if it is unable to find a suitable image to use after examining every provided `<source>`.
 
+- {{htmlattrdef("height")}}
+
+  - : The intrinsic height of the resource, in pixels. Must be an integer without a unit.
+
+    The `height` attribute has an effect only when the {{HTMLElement("source")}} element is the direct child of a {{HTMLElement("picture")}} element.
+    
+- {{htmlattrdef("width")}}
+
+  - : The intrinsic width of the resource, in pixels. Must be an integer without a unit.
+
+    The `width` attribute has an effect only when the {{HTMLElement("source")}} element is the direct child of a {{HTMLElement("picture")}} element.
 ## Usage notes
 
 The `<source>` element is an **empty element (or void element)**, which means that it not only has no content but also has no closing tag. That is, you _never_ use "`</source>`" in your HTML.
